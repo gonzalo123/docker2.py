@@ -59,7 +59,7 @@ services:
       - 6379:6379
 ````
 
-running this docker-compose file we set up a Redis server at localhost. The "problem" is that we need to access to this port from our containers and the localhost in our container is not the same localhost as our host's one. We can use our host's ip instead of localhost. I don't like to do that. Sometimes I'm in a VPN, sometimes in my housse, sometimes at office, ... and the ip changes. 
+running this docker-compose file we set up a Redis server at localhost. The "problem" is that we need to access to this port from our containers and the localhost in our container is not the same localhost as our host's one. We can use our host's ip instead of localhost. I don't like to do that. Sometimes I'm in a VPN, sometimes in my house, sometimes at office, ... and the ip changes. 
 
 Docker allows us to handle this problem. We only need to add this parameter when we run docker
 
